@@ -1,0 +1,149 @@
+.footer__copy__top{
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #635e5a;
+    span{
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+.footer__copy__bot{
+    color: #bab1a9;
+    font-size: 14px;
+}
+.footer__copy{
+    max-width: 380px;
+    margin-right: 130px;
+}
+.footer{
+    background-color: #ffffff;
+    padding-top: 45px;
+    padding-bottom: 55px;
+    position: relative;
+}
+.dark-theme .footer{
+    background-color: #1b1a19;
+}
+.footer-menu{
+    max-width: 480px;
+    width: 100%;
+    a{
+        display: block;
+        font-size: 12px;
+        color: #8e6c3d;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+}
+.footer-partner{
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    img{
+        max-width: 152px;
+    }
+}
+
+.footer__wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.dark-theme{
+    .footer__copy__top{
+        color: #827a70;
+    }
+    .footer__copy__bot{
+        color: #524d47;
+    }
+}
+
+@media(max-width: 1300px){
+    .footer__copy{
+        margin-right: 30px;
+    }
+}
+@media(max-width: 1160px){
+    .footer__copy{
+        max-width: 300px;
+    }
+    .footer-menu{
+        max-width: 420px;
+    }
+}
+
+@media(max-width: 991px){
+    .footer__wrap{
+        align-items: flex-start;
+    }
+    .footer-partner{
+        position: absolute;
+        bottom: 39px;
+        left: 36px;
+    }
+    .footer__copy{
+        flex: 1;
+        max-width: 375px;
+        margin-bottom: 45px;
+    }
+    .footer-menu{
+        flex: 1;
+        max-width: initial;
+        a{
+            text-align: right;
+        }
+    }
+    .footer{
+        padding-bottom: 38px;
+        padding-top: 30px;
+    }
+}
+@media(max-width: 767px){
+    .footer-partner{
+        left: 20px;
+    }
+}
+
+@media(max-width: 575px){
+    .footer__wrap{
+        flex-direction: column;
+    }
+    .footer__copy{
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .footer-menu{
+        margin-bottom: 20px;
+    }
+    .footer-menu a{
+        text-align: left;
+    }
+    .footer-partner{
+        position: initial;
+        justify-content: center;
+        width: 100%;
+    }
+    .footer-menu__first-col a{
+        text-align: right;
+    }
+    .footer__copy__top{
+        font-size: 10px;
+    }
+    .footer__copy__bot{
+        font-size: 10px;
+    }
+    .footer-menu a{
+        font-size: 11px;
+    }
+    .footer{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}

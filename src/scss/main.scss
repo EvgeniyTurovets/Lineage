@@ -42,6 +42,16 @@ html,body{
 .main{
     padding-top: 120px;
 }
+@media(max-width: 991px){
+    .app{
+        background-image: none;
+        background-color: #dedbdd;
+    }
+    .app.dark-theme{
+        background-image:none;
+        background-color: #292628;
+    }
+}
 @media(max-width: 767px){
     .main{
         padding-top: 70px;
@@ -49,3 +59,4 @@ html,body{
 }
 @import "./components/header";
 @import "./components/index";
+@import "./components/footer";
