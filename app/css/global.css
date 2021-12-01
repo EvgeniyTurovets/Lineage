@@ -36,6 +36,10 @@ i {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon-search:before {
+  content: "\e903";
+  font-weight: bold; }
+
 .icon-fb:before {
   content: "\e900"; }
 

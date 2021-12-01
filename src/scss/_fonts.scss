@@ -26,6 +26,10 @@
 	-moz-osx-font-smoothing: grayscale;
   }
   
+  .icon-search:before {
+	content: "\e903";
+	font-weight: bold;
+  }
   .icon-fb:before {
 	content: "\e900";
   }
@@ -35,6 +39,7 @@
   .icon-tg:before {
 	content: "\e902";
   }
+  
 @font-face {
 	font-family: 'Geometria';
 	src: url('../fonts/Geometria/Geometria-Thin.eot');

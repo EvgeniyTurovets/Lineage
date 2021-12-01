@@ -6,21 +6,26 @@ html,body{
 }
 .app{
     background-image: url('../img/bg.png');
-    background-color: #dedbdd;
+    background-color: #f0eeef;
     display: flex;
     flex-direction: column;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100%;
-    color: #000;
+    color: #222222;
 }
-
+.app.not-decor{
+    background-image: none;
+}
 .main{
     flex: 1;
 }
 .app.dark-theme{
     background-image: url('../img/bg-d.png');
     background-color: #292628;
+}
+.app.not-decor.dark-theme{
+    background-image: none;
 }
 .container-xxl{
     padding-right: 20px;
@@ -45,7 +50,7 @@ html,body{
 @media(max-width: 991px){
     .app{
         background-image: none;
-        background-color: #dedbdd;
+        background-color: #f0eeef;
     }
     .app.dark-theme{
         background-image:none;
@@ -57,6 +62,22 @@ html,body{
         padding-top: 70px;
     }
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+-moz-appearance: number-input;
+}
 @import "./components/header";
 @import "./components/index";
 @import "./components/footer";
+
+// Страницы
+@import "./components/inner";

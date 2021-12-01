@@ -22,8 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var header = document.getElementById('header');
   window.addEventListener('scroll', function () {
-    console.log(window.pageYOffset);
-
     if (window.pageYOffset > 0) {
       header.classList.add('fix');
     } else {
@@ -35,6 +33,42 @@ document.addEventListener('DOMContentLoaded', function () {
   var burger__menu = document.getElementById('burger__menu');
   burger.addEventListener('click', function () {
     burger__menu.classList.toggle('active');
+  }); // Селекты
+
+  var inner_select = document.querySelectorAll('.inner-select');
+
+  if (inner_select) {
+    inner_select.forEach(function (select) {
+      var choices = new Choices(select, {
+        searchEnabled: false
+      });
+    });
+  } // Перетаскиваем поиск на плашете
+
+
+  var inner__sale = document.getElementById('inner__sale');
+  var inner__top = document.getElementById('inner__top');
+  var inner__search = document.getElementById('inner__search');
+
+  function relocationSerch() {
+    if (window.innerWidth < 992 && window.innerWidth > 575) {
+      inner__sale.prepend(inner__search);
+    } else {
+      inner__top.append(inner__search);
+    }
+  }
+
+  window.addEventListener('resize', function () {
+    relocationSerch();
   });
+  relocationSerch(); // фильтр на мобильном
+
+  var inner__bot = document.getElementById('inner__bot');
+  var inner__bot__toggle = document.getElementById('inner__bot__toggle');
+  inner__bot__toggle.addEventListener('click', function () {
+    slideToggle(inner__bot, 300);
+  }); // кастомный скролл
+
+  new SimpleBar(document.getElementById('enner__list__body'));
 });
 //# sourceMappingURL=main.js.map
