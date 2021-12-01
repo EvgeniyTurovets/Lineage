@@ -50,25 +50,34 @@ document.addEventListener('DOMContentLoaded', function () {
   var inner__top = document.getElementById('inner__top');
   var inner__search = document.getElementById('inner__search');
 
-  function relocationSerch() {
-    if (window.innerWidth < 992 && window.innerWidth > 575) {
-      inner__sale.prepend(inner__search);
-    } else {
-      inner__top.append(inner__search);
-    }
-  }
+  if (inner__search) {
+    var relocationSerch = function relocationSerch() {
+      if (window.innerWidth < 992 && window.innerWidth > 575) {
+        inner__sale.prepend(inner__search);
+      } else {
+        inner__top.append(inner__search);
+      }
+    };
 
-  window.addEventListener('resize', function () {
+    window.addEventListener('resize', function () {
+      relocationSerch();
+    });
     relocationSerch();
-  });
-  relocationSerch(); // фильтр на мобильном
+  } // фильтр на мобильном
+
 
   var inner__bot = document.getElementById('inner__bot');
   var inner__bot__toggle = document.getElementById('inner__bot__toggle');
-  inner__bot__toggle.addEventListener('click', function () {
-    slideToggle(inner__bot, 300);
-  }); // кастомный скролл
 
-  new SimpleBar(document.getElementById('enner__list__body'));
+  if (inner__bot__toggle) {
+    inner__bot__toggle.addEventListener('click', function () {
+      slideToggle(inner__bot, 300);
+    });
+  } // кастомный скролл
+
+
+  if (document.getElementById('enner__list__body')) {
+    new SimpleBar(document.getElementById('enner__list__body'));
+  }
 });
 //# sourceMappingURL=main.js.map

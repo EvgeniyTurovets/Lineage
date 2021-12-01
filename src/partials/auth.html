@@ -1,0 +1,47 @@
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<div class="auth">
+    <div class="auth__top">
+        <a href="auth.html" class="btn btn-g">
+            Авторизация
+        </a>
+        <a href="reg.html" class="btn btn-g not-active">
+            Регистрация
+        </a>
+    </div>
+
+    <form class="auth__form" id="auth">
+        <input type="email" class="input" placeholder="Имя или почта">
+        <input type="password" class="input" placeholder="Пароль">
+        <div class="auth__form__text">
+            Забыли пароль?  <a href="">Восстановить ›</a>
+        </div>
+        <div class="recaptcha-wrapper">
+            <div id="myrecaptcha" class="g-recaptcha" data-sitekey="6Ld68W4dAAAAADXivF2W-3_nrQSvWCjjLp2xePQb"></div>
+                <div class="rc-anchor-checkbox-label">Я не робот</div>
+                <div class="recaptcha-info"></div>
+                <div class="rc-anchor-logo-text">reCAPTCHA</div>
+                <div class="rc-anchor-pt">
+                <a href="https://www.google.com/intl/en/policies/privacy/" target="_blank">Конфиденциальность</a>
+                <span aria-hidden="true" role="presentation"> - </span>
+                <a href="https://www.google.com/intl/en/policies/terms/" target="_blank">Условия использования</a>
+            </div>
+        </div>
+        <button type="button" class="btn btn-g auth__form__btn">Войти в аккаунт ›</button>
+    </form>
+
+    <div class="soc-auth">
+        Войти через социальные сети
+        <div class="soc-auth__wrap">
+            <a href="" target="_blank">
+                <img src="./img/auth/vk.png">
+            </a>
+            <a href="" target="_blank">
+                <img src="./img/auth/fb.png">
+            </a>
+            <a href="" target="_blank">
+                <img src="./img/auth/google.png" style="max-width: 65%;">
+            </a>
+        </div>
+    </div>
+</div>

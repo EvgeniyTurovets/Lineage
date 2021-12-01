@@ -1,4 +1,21 @@
-<header class="header" id="header">
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Linage</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+<body>
+  <div class="app" id="app">
+    <header class="header" id="header">
     <div class="container-xxl">
         <div class="header__row">
             <div class="burger__menu" id="burger__menu">
@@ -146,3 +163,98 @@
     </div>
 </header>
 
+
+    <main class="main">
+      <div class="container-xxl">
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<div class="auth">
+    <div class="auth__top">
+        <a href="auth.html" class="btn btn-g">
+            Авторизация
+        </a>
+        <a href="reg.html" class="btn btn-g not-active">
+            Регистрация
+        </a>
+    </div>
+
+    <form class="auth__form" id="auth">
+        <input type="email" class="input" placeholder="Имя или почта">
+        <input type="password" class="input" placeholder="Пароль">
+        <div class="auth__form__text">
+            Забыли пароль?  <a href="">Восстановить ›</a>
+        </div>
+        <div class="recaptcha-wrapper">
+            <div id="myrecaptcha" class="g-recaptcha" data-sitekey="6Ld68W4dAAAAADXivF2W-3_nrQSvWCjjLp2xePQb"></div>
+                <div class="rc-anchor-checkbox-label">Я не робот</div>
+                <div class="recaptcha-info"></div>
+                <div class="rc-anchor-logo-text">reCAPTCHA</div>
+                <div class="rc-anchor-pt">
+                <a href="https://www.google.com/intl/en/policies/privacy/" target="_blank">Конфиденциальность</a>
+                <span aria-hidden="true" role="presentation"> - </span>
+                <a href="https://www.google.com/intl/en/policies/terms/" target="_blank">Условия использования</a>
+            </div>
+        </div>
+        <button type="button" class="btn btn-g auth__form__btn">Войти в аккаунт ›</button>
+    </form>
+
+    <div class="soc-auth">
+        Войти через социальные сети
+        <div class="soc-auth__wrap">
+            <a href="" target="_blank">
+                <img src="./img/auth/vk.png">
+            </a>
+            <a href="" target="_blank">
+                <img src="./img/auth/fb.png">
+            </a>
+            <a href="" target="_blank">
+                <img src="./img/auth/google.png" style="max-width: 65%;">
+            </a>
+        </div>
+    </div>
+</div>
+
+      </div>
+    </main>  
+    <footer class="footer">
+    <div class="container-xxl">
+        <div class="footer__wrap">
+            <div class="footer__copy">
+                <div class="footer__copy__top">
+                    © 2021 Игровые сервисы <span>BUCKS.TRADE</span>
+                </div>
+                <div class="footer__copy__bot">
+                    Микро описание проекта, или еще какой-то текст для копирайтов и подобного
+                </div>
+            </div>
+        
+        
+            <div class="footer-menu">
+                <div class="row">
+                    <div class="footer-menu__first-col col-5 col-sm-12 col-lg-6">
+                        <a href="">Личный кабинет</a>
+                        <a href="">регистрация аккаунта</a>
+                        <a href="">Поддержка</a>
+                    </div>
+                    <div class="col-7 col-sm-12 col-lg-6">
+                        <a href="">Условия использования</a>
+                        <a href="">Пользовательское соглашение</a>
+                        <a href="">Использование куки</a>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div class="footer-partner">
+                <img src="./img/partner.png">
+            </div>
+        </div>
+    </div>
+</footer>   
+  </div>
+
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
