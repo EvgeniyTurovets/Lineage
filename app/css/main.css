@@ -781,7 +781,7 @@ input[type="number"]:focus {
     padding-bottom: 25px; } }
 
 .content-page {
-  padding-top: 70px;
+  padding-top: 53px;
   padding-bottom: 55px; }
 
 .content-page h1 {
@@ -829,7 +829,7 @@ input[type="number"]:focus {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 24px;
+    right: 16px;
     background-color: transparent;
     padding: 5px;
     border: 0;
@@ -865,7 +865,7 @@ input[type="number"]:focus {
     font-size: 13px;
     color: #fff;
     background-color: #3bbb82;
-    margin-right: 8px; }
+    margin-right: 10px; }
 
 .inner__sort__item:last-child {
   margin-right: 0; }
@@ -961,7 +961,7 @@ input[type="number"]:focus {
 
 .inner__bot {
   display: flex;
-  margin-top: 60px;
+  margin-top: 63px;
   justify-content: space-between; }
 
 .inner__select {
@@ -1384,8 +1384,8 @@ input[type="number"]:focus {
   background-color: #f9f8f9;
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-radius: 15px;
   transition: 0.3s all;
   cursor: pointer;
@@ -1462,7 +1462,7 @@ input[type="number"]:focus {
     display: none; } }
 
 .enner__list__body {
-  max-height: 721px;
+  max-height: 714px;
   overflow-y: auto;
   padding-right: 22px; }
 
@@ -1572,7 +1572,7 @@ input[type="number"]:focus {
   width: 100%;
   max-width: 460px;
   margin: 0 auto;
-  margin-top: 82px;
+  margin-top: 70px;
   margin-bottom: 78px; }
 
 .auth__top {
@@ -1734,7 +1734,7 @@ input[type="number"]:focus {
 .soc-auth__wrap {
   display: flex;
   justify-content: center;
-  margin-top: 23px; }
+  margin-top: 16px; }
   .soc-auth__wrap a {
     height: 42px;
     width: 42px;
