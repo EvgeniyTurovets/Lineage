@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Linage</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+<body>
+  <div class="app not-decor" id="app">
+    <header class="header" id="header">
+    <div class="container-xxl">
+        <div class="header__row">
+            <div class="burger__menu" id="burger__menu">
+                <div class="burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="mob-nav">
+                    <ul>
+                        <li>
+                            <a href="">Партнерство</a>
+                        </li>
+                        <li>
+                            <a href="">Помощь</a>
+                        </li>
+                        <li>
+                            <div>Язык
+                                <div class="lang-change">
+                                    <div class="lang-change__active">
+                                        <img src="./img/ru.png" width="20px" height="20px">
+                                        <span class="v"></span>
+                                    </div>
+                                    <div class="lang-change__list">
+                                        <a href="">
+                                            <img src="./img/eng.png" width="20px" height="20px">
+                                           EN
+                                        </a>
+                                        <a href="">
+                                            <img src="./img/ru.png" width="20px" height="20px">
+                                           RU
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="mon-nav__bot">
+                        <div class="change-theme">
+                            <button type="button" class="change-theme__light active" id="enable-light-theme-mob"></button>
+                            <button type="button" class="change-theme__dark" id="eneble-dark-theme-mob"></button>
+                        </div>
+
+                        <div class="header__social">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <i class="icon-vk"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="icon-fb"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="icon-tg"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-auth">
+                            <a href="auth.html" class="btn btn-grey">Вход</a>
+                            <a href="reg.html" class="btn btn-green2">Регистрация</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            
+            <a href="" class="header__logo">
+                <img src="./img/logo.png" class="light">
+                <img src="./img/logo-d.png" class="dark">
+            </a>
+
+            <div class="change-theme">
+                <button type="button" class="change-theme__light active" id="enable-light-theme"></button>
+                <button type="button" class="change-theme__dark" id="eneble-dark-theme"></button>
+            </div>
+            <div class="header__row__right">
+                <div class="header__social">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="icon-vk"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="icon-fb"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="icon-tg"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="header__nav">
+                    <ul>
+                        <li>
+                            <a href="">
+                                Партнерство
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Помощь
+                                <span class="v"></span>
+                            </a>
+                            <ul class="level2">
+                                <li>
+                                    <a href="">Пункт 1</a>
+                                </li>
+                                <li>
+                                    <a href="">Пункт 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-auth">
+                    <a href="auth.html" class="btn btn-grey">Вход</a>
+                    <a href="reg.html" class="btn btn-green2">Регистрация</a>
+                </div>
+                <div class="lang-change">
+                    <div class="lang-change__active">
+                        <img src="./img/ru.png" width="29px" height="29px">
+                        <span class="v"></span>
+                    </div>
+                    <div class="lang-change__list">
+                        <a href="">
+                            <img src="./img/eng.png" width="29px" height="29px">
+                           EN
+                        </a>
+                        <a href="">
+                            <img src="./img/ru.png" width="29px" height="29px">
+                           RU
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <main class="main">
+      <div class="container-xxl">
+        <div class="content-page">
+    <div class="offers__top">
+        <h1>Ваши предложения</h1>
+        <button type="button" class="btn btn-g btn-after" data-bs-toggle="modal" data-bs-target="#exampleModal">Добавить предложение ›</button>
+    </div>
+    <div class="offers__back">
+        <a href="">‹ Главная страница</a>
+    </div>
+    <div class="offers__list">
+        <div class="offers__des">
+            <div class="offers__des__head">
+                <div class="row">
+                    <div class="col-2">
+                        Сервес
+                    </div>
+                    <div class="col-4 col-xl-5">Описание</div>
+                    <div class="col-2 text-center">Наличие</div>
+                    <div class="col-2 text-center">Цена</div>
+                    <div class="col-2 col-xl-1 text-right">Статус</div>
+                </div>
+            </div>
+            <div class="offers__des__body">
+                <a href="" class="offers__des__item">
+                    <div class="row ">
+                        <div class="col-2">
+                            Elcardia + Esthus
+                        </div>
+                        <div class="col-4 col-xl-5">Страж теней, 109 уровень, Темные эльфы, Одетый </div>
+                        <div class="col-2 text-center price">280</div>
+                        <div class="col-2 text-center price">$5.790</div>
+                        <div class="col-2 col-xl-1 text-right status">Открыто</div>
+                    </div>
+                </a>
+                <div href="" class="offers__des__item not-active">
+                    <div class="row ">
+                        <div class="col-2">
+                            Elcardia + Esthus
+                        </div>
+                        <div class="col-4 col-xl-5">Страж теней, 109 уровень, Темные эльфы, Одетый </div>
+                        <div class="col-2 text-center price">280</div>
+                        <div class="col-2 text-center price">$5.790</div>
+                        <div class="col-2 col-xl-1 text-right status">закрыто</div>
+                    </div>
+                </div>
+                <a href="" class="offers__des__item">
+                    <div class="row ">
+                        <div class="col-2">
+                            Elcardia + Esthus
+                        </div>
+                        <div class="col-4 col-xl-5">Страж теней, 109 уровень, Темные эльфы, Одетый </div>
+                        <div class="col-2 text-center price">280</div>
+                        <div class="col-2 text-center price">$5.790</div>
+                        <div class="col-2 col-xl-1 text-right status">Открыто</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="inner__list__mob">
+            <a href="" class="inner__list__mob__item">
+                <div class="inner__list__mob__row">
+                    <div class="inner__list__mob__left">Сервер</div>
+                    <div class="inner__list__mob__right">Sheyeed</div>
+                </div>
+                <div class="inner__list__mob__row">
+                    <div class="inner__list__mob__left">Описание</div>
+                    <div class="inner__list__mob__right">
+                        <div class="des">Страж теней, 109 уровень <span>(подробности в описании)</span></div>
+                    </div>
+                </div>
+                <div class="inner__list__mob__row">
+                    <div class="inner__list__mob__left">Наличие</div>
+                    <div class="inner__list__mob__right">
+                        280
+                    </div>
+                </div>
+                <div class="inner__list__mob__row">
+                    <div class="inner__list__mob__left">Цена</div>
+                    <div class="inner__list__mob__right">
+                        <div class="price">59.790 RUB</div>
+                    </div>
+                </div>
+                <div class="inner__list__mob__row">
+                    <div class="inner__list__mob__left">Статус</div>
+                    <div class="inner__list__mob__right">
+                        <div class="status">Открыто</div>
+                    </div>
+                </div>
+            </a>
+            <div class="inner__list__mob__item not-active">
+                <div class="inner__list__mob__row">
+                    <div class="inner__list__mob__left">Сервер</div>
+                    <div class="inner__list__mob__right">Sheyeed</div>
+                </div>
+                <div class="inner__list__mob__row">
+                    <div class="inner__list__mob__left">Описание</div>
+                    <div class="inner__list__mob__right">
+                        <div class="des">Страж теней, 109 уровень <span>(подробности в описании)</span></div>
+                    </div>
+                </div>
+                <div class="inner__list__mob__row">
+                    <div class="inner__list__mob__left">Наличие</div>
+                    <div class="inner__list__mob__right">
+                        280
+                    </div>
+                </div>
+                <div class="inner__list__mob__row">
+                    <div class="inner__list__mob__left">Цена</div>
+                    <div class="inner__list__mob__right">
+                        <div class="price">59.790 RUB</div>
+                    </div>
+                </div>
+                <div class="inner__list__mob__row">
+                    <div class="inner__list__mob__left">Статус</div>
+                    <div class="inner__list__mob__right">
+                        <div class="status">Закрыто</div>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="inner__list__mob__item">
+                <div class="inner__list__mob__row">
+                    <div class="inner__list__mob__left">Сервер</div>
+                    <div class="inner__list__mob__right">Sheyeed</div>
+                </div>
+                <div class="inner__list__mob__row">
+                    <div class="inner__list__mob__left">Описание</div>
+                    <div class="inner__list__mob__right">
+                        <div class="des">Страж теней, 109 уровень <span>(подробности в описании)</span></div>
+                    </div>
+                </div>
+                <div class="inner__list__mob__row">
+                    <div class="inner__list__mob__left">Наличие</div>
+                    <div class="inner__list__mob__right">
+                        280
+                    </div>
+                </div>
+                <div class="inner__list__mob__row">
+                    <div class="inner__list__mob__left">Цена</div>
+                    <div class="inner__list__mob__right">
+                        <div class="price">59.790 RUB</div>
+                    </div>
+                </div>
+                <div class="inner__list__mob__row">
+                    <div class="inner__list__mob__left">Статус</div>
+                    <div class="inner__list__mob__right">
+                        <div class="status">Открыто</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Добавить предложения</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class='my-select'>
+                <select class="select">
+                    <option>Сервер</option>
+                    <option>Сервер 2</option>
+                    <option>Сервер 3</option>
+                </select>
+            </div>
+            <div class='my-select'>
+                <select class="select">
+                    <option>Категория</option>
+                    <option>Категория 2</option>
+                    <option>Категория 3</option>
+                </select>
+            </div>
+            <div class='my-select'>
+                <select class="select">
+                    <option>Ранг</option>
+                    <option>Ранг 2</option>
+                    <option>Ранг 3</option>
+                </select>
+            </div>
+            <input class="input" placeholder="Название">
+            <div class="input__label">
+                <input class="input" placeholder="Цена за 1 шт">
+                <div class="input__label-text">₽</div>
+            </div>
+            <div class="input__label">
+                <input class="input" placeholder="Наличие">
+                <div class="input__label-text">шт.</div>
+            </div>
+            <label class="checkbox">
+                <input type="checkbox" checked="">
+                <span></span>
+               Активные предложения
+            </label>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-g btn-after">Сохранить пароль</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      </div>
+    </main>  
+    <footer class="footer">
+    <div class="container-xxl">
+        <div class="footer__wrap">
+            <div class="footer__copy">
+                <div class="footer__copy__top">
+                    © 2021 Игровые сервисы <span>BUCKS.TRADE</span>
+                </div>
+                <div class="footer__copy__bot">
+                    Микро описание проекта, или еще какой-то текст для копирайтов и подобного
+                </div>
+            </div>
+        
+        
+            <div class="footer-menu">
+                <div class="row">
+                    <div class="footer-menu__first-col col-5 col-sm-12 col-lg-6">
+                        <a href="">Личный кабинет</a>
+                        <a href="">регистрация аккаунта</a>
+                        <a href="">Поддержка</a>
+                    </div>
+                    <div class="col-7 col-sm-12 col-lg-6">
+                        <a href="">Условия использования</a>
+                        <a href="">Пользовательское соглашение</a>
+                        <a href="">Использование куки</a>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div class="footer-partner">
+                <img src="./img/partner.png">
+            </div>
+        </div>
+    </div>
+</footer>   
+  </div>
+
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

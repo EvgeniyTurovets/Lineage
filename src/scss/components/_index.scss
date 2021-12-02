@@ -91,10 +91,11 @@
     color: #fff;
     font-size: 20px;
     font-weight: bold;
+    transition: 0.3s all;
 }
 .btn-green:hover{
     color: #fff;
-    background: linear-gradient(0deg, #41c575 0%, #2fa996 100%);
+    box-shadow: 0 0 10px 5px rgba(47, 168, 149, 0.3);
 }
 .main-content__item--big{
     padding-bottom: 60px;

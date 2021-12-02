@@ -51,7 +51,16 @@ document.addEventListener('DOMContentLoaded', function() {
             })
             
         })
-        
+    }
+
+    var selects = document.querySelectorAll('.select')
+    if(selects){
+        selects.forEach(function(select){
+            const choices = new Choices(select, {
+                searchEnabled: false
+            })
+            
+        })
     }
 
 

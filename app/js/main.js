@@ -43,6 +43,16 @@ document.addEventListener('DOMContentLoaded', function () {
         searchEnabled: false
       });
     });
+  }
+
+  var selects = document.querySelectorAll('.select');
+
+  if (selects) {
+    selects.forEach(function (select) {
+      var choices = new Choices(select, {
+        searchEnabled: false
+      });
+    });
   } // Перетаскиваем поиск на плашете
 
 
