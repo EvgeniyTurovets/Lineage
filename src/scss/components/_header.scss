@@ -132,6 +132,9 @@
 .header-auth a{
     margin-left: 10px;
 }
+.header-auth a:first-child{
+    font-weight: 400;
+}
 .header-auth a:hover{
     opacity: 0.8;
 }

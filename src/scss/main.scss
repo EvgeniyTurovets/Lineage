@@ -75,6 +75,9 @@ input[type="number"]:hover,
 input[type="number"]:focus {
 -moz-appearance: number-input;
 }
+.btn{
+    font-weight: bold;
+}
 @import "./components/header";
 @import "./components/index";
 @import "./components/footer";
@@ -83,3 +86,4 @@ input[type="number"]:focus {
 @import "./components/inner";
 @import "./components/auth";
 @import "./components/offers";
+@import "./components/wallets";

@@ -417,7 +417,12 @@
         }
     }
 }
-
+.is-open .choices__inner {
+    border-radius: 15px;
+}
+.is-flipped.is-open .choices__inner {
+    border-radius: 15px;
+}
 @media(max-width: 1399px){
     .inner__mid__item{
         font-size: 14px;
