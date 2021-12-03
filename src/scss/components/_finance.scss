@@ -1,0 +1,75 @@
+.finance__sum{
+    font-size: 27px;
+}
+.wallet__t__green{
+    color: #3aba81;
+    font-weight: 800;
+}
+
+.finance__text{
+    color: #cbced4;
+    font-weight: 500;
+    margin-bottom: 23px;
+}
+.choices__list--single .choices__item img{
+    max-width: 20px;
+}
+.choices__list--dropdown .choices__item img{
+    max-width: 20px;
+}
+
+.choose-right-text{
+    float: right;
+}
+.choose-left-text{
+    float: left;
+}
+
+.finance__enter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 22px;
+    .input{
+        height: 58px;
+        width: calc(100% - 190px - 22px);
+        margin-bottom: 0;
+        border: 2px solid #eff1f2;
+        background-color: transparent;
+        max-width: 310px;
+    }
+}
+
+.dark-theme{
+    .finance__enter{
+        .input{
+            border: 2px solid #413c3f;
+        }
+    }
+}
+
+@media(max-width: 575px){
+    .finance__enter{
+        margin-top: 12px;
+        flex-direction: column;
+        padding-bottom: 12px;
+        .input{
+            width: 100%;
+            height: 46px;
+            margin-bottom: 30px;
+            max-width: 100%;
+        }
+    }
+    .wallet--finance{
+        .wallet__left{
+            width: 100%;
+            margin-right: 0;
+            margin-left: 0;
+            border-radius: 15px;
+            text-align: center;
+        }
+    }
+    .finance__text{
+        font-size: 12px;
+    }
+}

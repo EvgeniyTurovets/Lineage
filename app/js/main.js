@@ -53,8 +53,86 @@ document.addEventListener('DOMContentLoaded', function () {
         searchEnabled: false
       });
     });
-  } // Перетаскиваем поиск на плашете
+  }
 
+  var choices_width_img = new Choices(document.getElementById('choices-width-img'), {
+    searchEnabled: false,
+    callbackOnCreateTemplates: function callbackOnCreateTemplates(strToEl) {
+      var classNames = this.config.classNames;
+      var itemSelectText = this.config.itemSelectText;
+      console.log(strToEl);
+      return {
+        item: function item(classNames, data) {
+          return strToEl('\
+              <div\
+                class="' + String(classNames.item) + ' ' + String(data.highlighted ? classNames.highlightedState : classNames.itemSelectable) + '"\
+                data-item\
+                data-id="' + String(data.id) + '"\
+                data-value="' + String(data.value) + '"\
+                ' + String(data.active ? 'aria-selected="true"' : '') + '\
+                ' + String(data.disabled ? 'aria-disabled="true"' : '') + '\
+                >\
+                <span style="margin-right:10px;"><img src="./img/bb.png"></span> ' + String(data.label) + '\
+              </div>\
+            ');
+        },
+        choice: function choice(classNames, data) {
+          return strToEl('\
+              <div\
+                class="' + String(classNames.item) + ' ' + String(classNames.itemChoice) + ' ' + String(data.disabled ? classNames.itemDisabled : classNames.itemSelectable) + '"\
+                data-select-text="' + String(itemSelectText) + '"\
+                data-choice \
+                ' + String(data.disabled ? 'data-choice-disabled aria-disabled="true"' : 'data-choice-selectable') + '\
+                data-id="' + String(data.id) + '"\
+                data-value="' + String(data.value) + '"\
+                ' + String(data.groupId > 0 ? 'role="treeitem"' : 'role="option"') + '\
+                >\
+                <span style="margin-right:10px;"><img src="./img/bb.png"></span> ' + String(data.label) + '\
+              </div>\
+            ');
+        }
+      };
+    }
+  });
+  var choices_width_img = new Choices(document.getElementById('choices-width-right-text'), {
+    searchEnabled: false,
+    callbackOnCreateTemplates: function callbackOnCreateTemplates(strToEl) {
+      var classNames = this.config.classNames;
+      var itemSelectText = this.config.itemSelectText;
+      console.log(strToEl);
+      return {
+        item: function item(classNames, data) {
+          return strToEl('\
+              <div\
+                class="' + String(classNames.item) + ' ' + String(data.highlighted ? classNames.highlightedState : classNames.itemSelectable) + '"\
+                data-item\
+                data-id="' + String(data.id) + '"\
+                data-value="' + String(data.value) + '"\
+                ' + String(data.active ? 'aria-selected="true"' : '') + '\
+                ' + String(data.disabled ? 'aria-disabled="true"' : '') + '\
+                >\
+                <span class="choose-left-text">' + String(data.label) + '</span><span class="choose-right-text">500$</span>' + '\
+              </div>\
+            ');
+        },
+        choice: function choice(classNames, data) {
+          return strToEl('\
+              <div\
+                class="' + String(classNames.item) + ' ' + String(classNames.itemChoice) + ' ' + String(data.disabled ? classNames.itemDisabled : classNames.itemSelectable) + '"\
+                data-select-text="' + String(itemSelectText) + '"\
+                data-choice \
+                ' + String(data.disabled ? 'data-choice-disabled aria-disabled="true"' : 'data-choice-selectable') + '\
+                data-id="' + String(data.id) + '"\
+                data-value="' + String(data.value) + '"\
+                ' + String(data.groupId > 0 ? 'role="treeitem"' : 'role="option"') + '\
+                >\
+                <span class="choose-left-text">' + String(data.label) + '</span> - <span class="choose-right-text">500$</span>' + '\
+              </div>\
+            ');
+        }
+      };
+    }
+  }); // Перетаскиваем поиск на плашете
 
   var inner__sale = document.getElementById('inner__sale');
   var inner__top = document.getElementById('inner__top');
