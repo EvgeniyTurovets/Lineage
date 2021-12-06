@@ -199,35 +199,54 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   if (document.getElementById('mess__wrap')) {
-    var messSwiper = document.getElementById('mess__wrap');
-    console.log(window.innerWidth);
-
-    if (window.innerWidth < 992) {
-      var swiper = new Swiper('#mess__wrap', {
-        slidesPerView: 1,
-        spaceBetween: 50,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
-        },
-        breakpoints: {
-          // when window width is >= 320px
-          575: {
-            slidesPerView: 2,
-            spaceBetween: 20
+    var swiperInit = function swiperInit() {
+      if (!init) {
+        swiper = new Swiper('#mess__wrap', {
+          slidesPerView: 1,
+          spaceBetween: 50,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
           },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 20
+          breakpoints: {
+            // when window width is >= 320px
+            575: {
+              slidesPerView: 2,
+              spaceBetween: 20
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 20
+            }
+          },
+          on: {
+            init: function init() {
+              messSwiper.classList.add('swiper-init');
+            }
           }
-        },
-        on: {
-          init: function init() {
-            messSwiper.classList.add('swiper-init');
-          }
+        });
+        init = true;
+      }
+    };
+
+    var swiperMode = function swiperMode() {
+      if (window.innerWidth > 991) {
+        if (init) {
+          swiper.destroy();
+          init = false;
         }
-      });
-    }
+      } else {
+        swiperInit();
+      }
+    };
+
+    var messSwiper = document.getElementById('mess__wrap');
+    var swiper;
+    var init = false;
+    swiperMode();
+    window.addEventListener('resize', function () {
+      swiperMode();
+    });
   }
 });
 //# sourceMappingURL=main.js.map
