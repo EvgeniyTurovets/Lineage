@@ -63,191 +63,197 @@ document.addEventListener('DOMContentLoaded', function() {
         })
     }
     
-    var choices_width_img = new Choices(
-        document.getElementById('choices-width-img'),
-        {
-        searchEnabled: false,
-        callbackOnCreateTemplates: function(strToEl) {
-           
-            var classNames = this.config.classNames;
-            var itemSelectText = this.config.itemSelectText;
-            console.log(strToEl)
-            return {
-              item: function(classNames, data) {
-                return strToEl(
-                  '\
-              <div\
-                class="' +
-                    String(classNames.item) +
-                    ' ' +
-                    String(
-                      data.highlighted
-                        ? classNames.highlightedState
-                        : classNames.itemSelectable
-                    ) +
-                    '"\
-                data-item\
-                data-id="' +
-                    String(data.id) +
-                    '"\
-                data-value="' +
-                    String(data.value) +
-                    '"\
-                ' +
-                    String(data.active ? 'aria-selected="true"' : '') +
-                    '\
-                ' +
-                    String(data.disabled ? 'aria-disabled="true"' : '') +
-                    '\
-                >\
-                <span style="margin-right:10px;"><img src="./img/bb.png"></span> ' +
-                    String(data.label) +
-                    '\
-              </div>\
-            '
-                );
+    if(document.getElementById('choices-width-img')){
+        var choices_width_img = new Choices(
+            document.getElementById('choices-width-img'),
+            {
+            searchEnabled: false,
+            callbackOnCreateTemplates: function(strToEl) {
+               
+                var classNames = this.config.classNames;
+                var itemSelectText = this.config.itemSelectText;
+                console.log(strToEl)
+                return {
+                  item: function(classNames, data) {
+                    return strToEl(
+                      '\
+                  <div\
+                    class="' +
+                        String(classNames.item) +
+                        ' ' +
+                        String(
+                          data.highlighted
+                            ? classNames.highlightedState
+                            : classNames.itemSelectable
+                        ) +
+                        '"\
+                    data-item\
+                    data-id="' +
+                        String(data.id) +
+                        '"\
+                    data-value="' +
+                        String(data.value) +
+                        '"\
+                    ' +
+                        String(data.active ? 'aria-selected="true"' : '') +
+                        '\
+                    ' +
+                        String(data.disabled ? 'aria-disabled="true"' : '') +
+                        '\
+                    >\
+                    <span style="margin-right:10px;"><img src="./img/bb.png"></span> ' +
+                        String(data.label) +
+                        '\
+                  </div>\
+                '
+                    );
+                  },
+                  choice: function(classNames, data) {
+                    return strToEl(
+                      '\
+                  <div\
+                    class="' +
+                        String(classNames.item) +
+                        ' ' +
+                        String(classNames.itemChoice) +
+                        ' ' +
+                        String(
+                          data.disabled
+                            ? classNames.itemDisabled
+                            : classNames.itemSelectable
+                        ) +
+                        '"\
+                    data-select-text="' +
+                        String(itemSelectText) +
+                        '"\
+                    data-choice \
+                    ' +
+                        String(
+                          data.disabled
+                            ? 'data-choice-disabled aria-disabled="true"'
+                            : 'data-choice-selectable'
+                        ) +
+                        '\
+                    data-id="' +
+                        String(data.id) +
+                        '"\
+                    data-value="' +
+                        String(data.value) +
+                        '"\
+                    ' +
+                        String(
+                          data.groupId > 0 ? 'role="treeitem"' : 'role="option"'
+                        ) +
+                        '\
+                    >\
+                    <span style="margin-right:10px;"><img src="./img/bb.png"></span> ' +
+                        String(data.label) +
+                        '\
+                  </div>\
+                '
+                    );
+                  },
+                };
               },
-              choice: function(classNames, data) {
-                return strToEl(
-                  '\
-              <div\
-                class="' +
-                    String(classNames.item) +
-                    ' ' +
-                    String(classNames.itemChoice) +
-                    ' ' +
-                    String(
-                      data.disabled
-                        ? classNames.itemDisabled
-                        : classNames.itemSelectable
-                    ) +
-                    '"\
-                data-select-text="' +
-                    String(itemSelectText) +
-                    '"\
-                data-choice \
-                ' +
-                    String(
-                      data.disabled
-                        ? 'data-choice-disabled aria-disabled="true"'
-                        : 'data-choice-selectable'
-                    ) +
-                    '\
-                data-id="' +
-                    String(data.id) +
-                    '"\
-                data-value="' +
-                    String(data.value) +
-                    '"\
-                ' +
-                    String(
-                      data.groupId > 0 ? 'role="treeitem"' : 'role="option"'
-                    ) +
-                    '\
-                >\
-                <span style="margin-right:10px;"><img src="./img/bb.png"></span> ' +
-                    String(data.label) +
-                    '\
-              </div>\
-            '
-                );
-              },
-            };
-          },
-        }
-    );
+            }
+        );
+    }
+    
 
-    var choices_width_img = new Choices(
-        document.getElementById('choices-width-right-text'),
-        {
-        searchEnabled: false,
-        callbackOnCreateTemplates: function(strToEl) {
-           
-            var classNames = this.config.classNames;
-            var itemSelectText = this.config.itemSelectText;
-            console.log(strToEl)
-            return {
-              item: function(classNames, data) {
-                return strToEl(
-                  '\
-              <div\
-                class="' +
-                    String(classNames.item) +
-                    ' ' +
-                    String(
-                      data.highlighted
-                        ? classNames.highlightedState
-                        : classNames.itemSelectable
-                    ) +
-                    '"\
-                data-item\
-                data-id="' +
-                    String(data.id) +
-                    '"\
-                data-value="' +
-                    String(data.value) +
-                    '"\
-                ' +
-                    String(data.active ? 'aria-selected="true"' : '') +
-                    '\
-                ' +
-                    String(data.disabled ? 'aria-disabled="true"' : '') +
-                    '\
-                >\
-                <span class="choose-left-text">' + String(data.label) + '</span><span class="choose-right-text">500$</span>' +
-                    '\
-              </div>\
-            '
-                );
+    if(document.getElementById('choices-width-right-text')){
+        var choices_width_img = new Choices(
+            document.getElementById('choices-width-right-text'),
+            {
+            searchEnabled: false,
+            callbackOnCreateTemplates: function(strToEl) {
+               
+                var classNames = this.config.classNames;
+                var itemSelectText = this.config.itemSelectText;
+                console.log(strToEl)
+                return {
+                  item: function(classNames, data) {
+                    return strToEl(
+                      '\
+                  <div\
+                    class="' +
+                        String(classNames.item) +
+                        ' ' +
+                        String(
+                          data.highlighted
+                            ? classNames.highlightedState
+                            : classNames.itemSelectable
+                        ) +
+                        '"\
+                    data-item\
+                    data-id="' +
+                        String(data.id) +
+                        '"\
+                    data-value="' +
+                        String(data.value) +
+                        '"\
+                    ' +
+                        String(data.active ? 'aria-selected="true"' : '') +
+                        '\
+                    ' +
+                        String(data.disabled ? 'aria-disabled="true"' : '') +
+                        '\
+                    >\
+                    <span class="choose-left-text">' + String(data.label) + '</span><span class="choose-right-text">500$</span>' +
+                        '\
+                  </div>\
+                '
+                    );
+                  },
+                  choice: function(classNames, data) {
+                    return strToEl(
+                      '\
+                  <div\
+                    class="' +
+                        String(classNames.item) +
+                        ' ' +
+                        String(classNames.itemChoice) +
+                        ' ' +
+                        String(
+                          data.disabled
+                            ? classNames.itemDisabled
+                            : classNames.itemSelectable
+                        ) +
+                        '"\
+                    data-select-text="' +
+                        String(itemSelectText) +
+                        '"\
+                    data-choice \
+                    ' +
+                        String(
+                          data.disabled
+                            ? 'data-choice-disabled aria-disabled="true"'
+                            : 'data-choice-selectable'
+                        ) +
+                        '\
+                    data-id="' +
+                        String(data.id) +
+                        '"\
+                    data-value="' +
+                        String(data.value) +
+                        '"\
+                    ' +
+                        String(
+                          data.groupId > 0 ? 'role="treeitem"' : 'role="option"'
+                        ) +
+                        '\
+                    >\
+                    <span class="choose-left-text">' + String(data.label) + '</span> - <span class="choose-right-text">500$</span>' +
+                        '\
+                  </div>\
+                '
+                    );
+                  },
+                };
               },
-              choice: function(classNames, data) {
-                return strToEl(
-                  '\
-              <div\
-                class="' +
-                    String(classNames.item) +
-                    ' ' +
-                    String(classNames.itemChoice) +
-                    ' ' +
-                    String(
-                      data.disabled
-                        ? classNames.itemDisabled
-                        : classNames.itemSelectable
-                    ) +
-                    '"\
-                data-select-text="' +
-                    String(itemSelectText) +
-                    '"\
-                data-choice \
-                ' +
-                    String(
-                      data.disabled
-                        ? 'data-choice-disabled aria-disabled="true"'
-                        : 'data-choice-selectable'
-                    ) +
-                    '\
-                data-id="' +
-                    String(data.id) +
-                    '"\
-                data-value="' +
-                    String(data.value) +
-                    '"\
-                ' +
-                    String(
-                      data.groupId > 0 ? 'role="treeitem"' : 'role="option"'
-                    ) +
-                    '\
-                >\
-                <span class="choose-left-text">' + String(data.label) + '</span> - <span class="choose-right-text">500$</span>' +
-                    '\
-              </div>\
-            '
-                );
-              },
-            };
-          },
-        }
-    );
+            }
+        );
+    }
+   
 
     // Перетаскиваем поиск на плашете
     var inner__sale = document.getElementById('inner__sale')
@@ -285,6 +291,27 @@ document.addEventListener('DOMContentLoaded', function() {
     // кастомный скролл
     if(document.getElementById('enner__list__body')){
         new SimpleBar(document.getElementById('enner__list__body'));
+    }
+    
+    var dropArea = document.getElementById('drag-and-drop') 
+    dropArea.addEventListener("drop", handleDrop, false);
+    dropArea.addEventListener("change", handleDrop, false);
+
+    function handleDrop(e) {
+        var input = e.target
+
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            let img = document.getElementById('drop-zone-img')
+           
+            reader.onload = function (e) {
+                img.setAttribute('src', e.target.result)
+                dropArea.closest('.dropzone').classList.add('upload')
+                fadeIn(img, 200)
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
     }
     
 })

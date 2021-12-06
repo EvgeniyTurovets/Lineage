@@ -28,7 +28,6 @@
   
   .icon-search:before {
 	content: "\e903";
-	font-weight: bold;
   }
   .icon-fb:before {
 	content: "\e900";
@@ -38,6 +37,9 @@
   }
   .icon-tg:before {
 	content: "\e902";
+  }
+  .icon-edit:before {
+	content: "\e904";
   }
   
 @font-face {

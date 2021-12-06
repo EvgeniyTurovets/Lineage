@@ -78,6 +78,9 @@ input[type="number"]:focus {
 .btn{
     font-weight: bold;
 }
+.offers__top__name{
+    color: #3cbb80;
+}
 @import "./components/header";
 @import "./components/index";
 @import "./components/footer";
@@ -89,3 +92,4 @@ input[type="number"]:focus {
 @import "./components/wallets";
 @import "./components/confirm";
 @import "./components/finance";
+@import "./components/profile";

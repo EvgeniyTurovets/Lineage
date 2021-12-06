@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Linage</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+<body>
+  <div class="app not-decor" id="app">
+    <header class="header" id="header">
+    <div class="container-xxl">
+        <div class="header__row">
+            <div class="burger__menu" id="burger__menu">
+                <div class="burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="mob-nav">
+                    <ul>
+                        <li>
+                            <a href="">Партнерство</a>
+                        </li>
+                        <li>
+                            <a href="">Помощь</a>
+                        </li>
+                        <li>
+                            <div>Язык
+                                <div class="lang-change">
+                                    <div class="lang-change__active">
+                                        <img src="./img/ru.png" width="20px" height="20px">
+                                        <span class="v"></span>
+                                    </div>
+                                    <div class="lang-change__list">
+                                        <a href="">
+                                            <img src="./img/eng.png" width="20px" height="20px">
+                                           EN
+                                        </a>
+                                        <a href="">
+                                            <img src="./img/ru.png" width="20px" height="20px">
+                                           RU
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="mon-nav__bot">
+                        <div class="change-theme">
+                            <button type="button" class="change-theme__light active" id="enable-light-theme-mob"></button>
+                            <button type="button" class="change-theme__dark" id="eneble-dark-theme-mob"></button>
+                        </div>
+
+                        <div class="header__social">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <i class="icon-vk"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="icon-fb"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="icon-tg"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-auth">
+                            <a href="auth.html" class="btn btn-grey">Вход</a>
+                            <a href="reg.html" class="btn btn-green2">Регистрация</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            
+            <a href="" class="header__logo">
+                <img src="./img/logo.png" class="light">
+                <img src="./img/logo-d.png" class="dark">
+            </a>
+
+            <div class="change-theme">
+                <button type="button" class="change-theme__light active" id="enable-light-theme"></button>
+                <button type="button" class="change-theme__dark" id="eneble-dark-theme"></button>
+            </div>
+            <div class="header__row__right">
+                <div class="header__social">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="icon-vk"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="icon-fb"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="icon-tg"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="header__nav">
+                    <ul>
+                        <li>
+                            <a href="">
+                                Партнерство
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Помощь
+                                <span class="v"></span>
+                            </a>
+                            <ul class="level2">
+                                <li>
+                                    <a href="">Пункт 1</a>
+                                </li>
+                                <li>
+                                    <a href="">Пункт 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-auth">
+                    <a href="auth.html" class="btn btn-grey">Вход</a>
+                    <a href="reg.html" class="btn btn-green2">Регистрация</a>
+                </div>
+                <div class="lang-change">
+                    <div class="lang-change__active">
+                        <img src="./img/ru.png" width="29px" height="29px">
+                        <span class="v"></span>
+                    </div>
+                    <div class="lang-change__list">
+                        <a href="">
+                            <img src="./img/eng.png" width="29px" height="29px">
+                           EN
+                        </a>
+                        <a href="">
+                            <img src="./img/ru.png" width="29px" height="29px">
+                           RU
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <main class="main">
+      <div class="container-xxl">
+        <div class="content-page">
+    <div class="offers__top">
+        <h1>Профиль <span class="offers__top__name">Anderson</span></h1>
+    </div>
+    <div class="offers__back">
+        <a href="">‹ Главная страница</a>
+    </div>
+
+    <div class='wallet wallet--profile'>
+        <div class="wallet__row">
+            <div class="wallet__left">
+               <div class="profile">
+                    <div class="profile__img" style="background-image: url('./img/profile/avatar.jpg');">
+                        <div class="profile__img__edit">
+                            <i class="icon-edit"></i>
+                        </div>
+                    </div>
+
+                    <div class="profile__name">
+                        Anderson
+                        <div class="profile__status">В сети</div>
+                    </div>
+
+                    <div class="profile__data">Дата регистрации <span>12 августа, 12:02</span></div>
+               </div>
+               <div class="profile__bot">
+                   <div class="profile__bot__wrap">
+                        <button type="button" class="btn btn-after" data-bs-toggle="modal" data-bs-target="#avatar">Изменить аватарку</button>
+                        <button type="button" class="btn btn-after" data-bs-toggle="modal" data-bs-target="#modal-parol">Изменить пароль</button>
+                        <button type="button" class="btn btn-after" data-bs-toggle="modal" data-bs-target="#modal-email">Привязать почту</button>
+                        <a type="button" href="wallets.html" class="btn btn-after">Кошельки</a>
+                   </div>
+               </div>
+            </div>
+            <div class="wallet__right">
+                <div class="wallet__t">Оповещения</div>
+                <div class="profile__push__list">
+                    <div class="profile__push">
+                        <div class="profile__push__img" style="background-image: url('./img/profile/tg.jpg');"></div>
+                        <div class="profile__push__wrap">
+                            <div class="profile__push__name">Telegram</div>
+                            <div class="profile__push__text">Оповещения присылает наш верный телеграм-бот не верных мы разбросали на запчасти</div>
+                            <div class="profile__push__info">Необходимо привязать <a href="">Telegram</a></div>
+                            <button class="btn btn-active">Включить оповещения</button>
+                            <!-- <button class="btn btn-not-active">Отключить оповещения</button> -->
+                        </div>
+                    </div>
+
+                    <div class="profile__push">
+                        <div class="profile__push__img" style="background-image: url('./img/profile/alarm.jpg');"></div>
+                        <div class="profile__push__wrap">
+                            <div class="profile__push__name">Push-уведомления</div>
+                            <div class="profile__push__text">Оповещения присылает наш верный телеграм-бот не верных мы разбросали на запчасти</div>
+                            
+                            <button class="btn btn-active">Включить оповещения</button>
+                            <!-- <button class="btn btn-not-active">Отключить оповещения</button> -->
+                        </div>
+                    </div>
+
+                    <div class="profile__push">
+                        <div class="profile__push__img" style="background-image: url('./img/profile/mail.jpg');"></div>
+                        <div class="profile__push__wrap">
+                            <div class="profile__push__name">Оповещеня на электроной почте</div>
+                            <div class="profile__push__text">Оповещения присылает наш верный телеграм-бот не верных мы разбросали на запчасти</div>
+                            
+                            <button class="btn btn-not-active">Отключить оповещения</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="avatar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Добавить предложения</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <label class="dropzone">
+                    <input type="file" id="drag-and-drop" accept="image/png, image/gif, image/jpeg">
+                    <div class="dropzone__wrap">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-image fa-w-16"><path fill="currentColor" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm16 336c0 8.822-7.178 16-16 16H48c-8.822 0-16-7.178-16-16V112c0-8.822 7.178-16 16-16h416c8.822 0 16 7.178 16 16v288zM112 232c30.928 0 56-25.072 56-56s-25.072-56-56-56-56 25.072-56 56 25.072 56 56 56zm0-80c13.234 0 24 10.766 24 24s-10.766 24-24 24-24-10.766-24-24 10.766-24 24-24zm207.029 23.029L224 270.059l-31.029-31.029c-9.373-9.373-24.569-9.373-33.941 0l-88 88A23.998 23.998 0 0 0 64 344v28c0 6.627 5.373 12 12 12h360c6.627 0 12-5.373 12-12v-92c0-6.365-2.529-12.47-7.029-16.971l-88-88c-9.373-9.372-24.569-9.372-33.942 0zM416 352H96v-4.686l80-80 48 48 112-112 80 80V352z" class=""></path></svg>
+                        Перетащите сюда картинку
+                    </div>
+                    <div class="drop-zone-img">
+                        <img src="" id="drop-zone-img">
+                    </div>
+                </label>
+                
+            </form>
+        </div>
+        <div class="modal-footer modal-footer-betwen">
+          <button type="button" class="btn border-btn">Загрузить ›</button>
+          <button type="button" class="btn btn-g btn-after">Сохранить</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<div class="modal fade" id="modal-parol" tabindex="-1" aria-labelledby="modal-parol" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Изменения пароля</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <input type="name" class="input" placeholder="Текущий пароль" maxlength="16">
+            <div class="valid-text">
+                Введите старый пароль
+            </div>
+            <input type="name" class="input" placeholder="Новый пароль" maxlength="16">
+            <div class="valid-text">
+                Максимальная длина 16 символов
+            </div>
+            <div class="recaptcha-wrapper">
+                <div id="myrecaptcha" class="g-recaptcha" data-sitekey="6Ld68W4dAAAAADXivF2W-3_nrQSvWCjjLp2xePQb"></div>
+                    <div class="rc-anchor-checkbox-label">Я не робот</div>
+                    <div class="recaptcha-info"></div>
+                    <div class="rc-anchor-logo-text">reCAPTCHA</div>
+                    <div class="rc-anchor-pt">
+                    <a href="https://www.google.com/intl/en/policies/privacy/" target="_blank">Конфиденциальность</a>
+                    <span aria-hidden="true" role="presentation"> - </span>
+                    <a href="https://www.google.com/intl/en/policies/terms/" target="_blank">Условия использования</a>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-g btn-after">Сохранить пароль</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-email" tabindex="-1" aria-labelledby="modal-email" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Привязка почты</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <input type="name" class="input" placeholder="Почта" maxlength="16">
+            <div class="valid-text">
+                Введите актуальный e-mail
+            </div>
+            
+            <div class="recaptcha-wrapper">
+                <div id="myrecaptcha" class="g-recaptcha" data-sitekey="6Ld68W4dAAAAADXivF2W-3_nrQSvWCjjLp2xePQb"></div>
+                    <div class="rc-anchor-checkbox-label">Я не робот</div>
+                    <div class="recaptcha-info"></div>
+                    <div class="rc-anchor-logo-text">reCAPTCHA</div>
+                    <div class="rc-anchor-pt">
+                    <a href="https://www.google.com/intl/en/policies/privacy/" target="_blank">Конфиденциальность</a>
+                    <span aria-hidden="true" role="presentation"> - </span>
+                    <a href="https://www.google.com/intl/en/policies/terms/" target="_blank">Условия использования</a>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-g btn-after">Сохранить почту</button>
+        </div>
+      </div>
+    </div>
+</div>
+      </div>
+    </main>  
+    <footer class="footer">
+    <div class="container-xxl">
+        <div class="footer__wrap">
+            <div class="footer__copy">
+                <div class="footer__copy__top">
+                    © 2021 Игровые сервисы <span>BUCKS.TRADE</span>
+                </div>
+                <div class="footer__copy__bot">
+                    Микро описание проекта, или еще какой-то текст для копирайтов и подобного
+                </div>
+            </div>
+        
+        
+            <div class="footer-menu">
+                <div class="row">
+                    <div class="footer-menu__first-col col-5 col-sm-12 col-lg-6">
+                        <a href="">Личный кабинет</a>
+                        <a href="">регистрация аккаунта</a>
+                        <a href="">Поддержка</a>
+                    </div>
+                    <div class="col-7 col-sm-12 col-lg-6">
+                        <a href="">Условия использования</a>
+                        <a href="">Пользовательское соглашение</a>
+                        <a href="">Использование куки</a>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div class="footer-partner">
+                <img src="./img/partner.png">
+            </div>
+        </div>
+    </div>
+</footer>   
+  </div>
+
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

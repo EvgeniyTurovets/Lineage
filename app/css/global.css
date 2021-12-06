@@ -37,8 +37,7 @@ i {
   -moz-osx-font-smoothing: grayscale; }
 
 .icon-search:before {
-  content: "\e903";
-  font-weight: bold; }
+  content: "\e903"; }
 
 .icon-fb:before {
   content: "\e900"; }
@@ -48,6 +47,9 @@ i {
 
 .icon-tg:before {
   content: "\e902"; }
+
+.icon-edit:before {
+  content: "\e904"; }
 
 @font-face {
   font-family: 'Geometria';
