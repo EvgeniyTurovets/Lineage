@@ -278,22 +278,27 @@
 @media(max-width: 575px){
     .profile{
         background-color: transparent;
-        
+        background-color: transparent;
+    }
+    .wallet--profile .wallet__left{
+        background-color: transparent;
     }
     .dark-theme .profile{
         background-color: transparent;
     }
-    .dark-theme .wallet__left{
+    .dark-theme .wallet--profile .wallet__left{
         background-color: transparent;
     }
-    .dark-theme .profile__bot{
+    .dark-theme .wallet--profile .profile__bot{
+        background-color: transparent;
+    }
+    .wallet--profile .profile__bot{
         background-color: transparent;
     }
     .profile{
         flex-direction: column;
         text-align: center;
         padding: 20px;
-        padding-top: 0;
     }
     .profile__img{
         margin-right: 0;

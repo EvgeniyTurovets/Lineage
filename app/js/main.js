@@ -175,23 +175,58 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   var dropArea = document.getElementById('drag-and-drop');
-  dropArea.addEventListener("drop", handleDrop, false);
-  dropArea.addEventListener("change", handleDrop, false);
 
-  function handleDrop(e) {
-    var input = e.target;
+  if (dropArea) {
+    var handleDrop = function handleDrop(e) {
+      var input = e.target;
 
-    if (input.files && input.files[0]) {
-      var reader = new FileReader();
-      var img = document.getElementById('drop-zone-img');
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        var img = document.getElementById('drop-zone-img');
 
-      reader.onload = function (e) {
-        img.setAttribute('src', e.target.result);
-        dropArea.closest('.dropzone').classList.add('upload');
-        fadeIn(img, 200);
-      };
+        reader.onload = function (e) {
+          img.setAttribute('src', e.target.result);
+          dropArea.closest('.dropzone').classList.add('upload');
+          fadeIn(img, 200);
+        };
 
-      reader.readAsDataURL(input.files[0]);
+        reader.readAsDataURL(input.files[0]);
+      }
+    };
+
+    dropArea.addEventListener("drop", handleDrop, false);
+    dropArea.addEventListener("change", handleDrop, false);
+  }
+
+  if (document.getElementById('mess__wrap')) {
+    var messSwiper = document.getElementById('mess__wrap');
+    console.log(window.innerWidth);
+
+    if (window.innerWidth < 992) {
+      var swiper = new Swiper('#mess__wrap', {
+        slidesPerView: 1,
+        spaceBetween: 50,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          575: {
+            slidesPerView: 2,
+            spaceBetween: 20
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20
+          }
+        },
+        on: {
+          init: function init() {
+            messSwiper.classList.add('swiper-init');
+          }
+        }
+      });
     }
   }
 });

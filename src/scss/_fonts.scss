@@ -26,6 +26,18 @@
 	-moz-osx-font-smoothing: grayscale;
   }
   
+  .icon-arr-r2:before {
+	content: "\e907";
+  }
+  .icon-arr-l2:before {
+	content: "\e908";
+  }
+  .icon-arr-l:before {
+	content: "\e905";
+  }
+  .icon-arr-r:before {
+	content: "\e906";
+  }
   .icon-search:before {
 	content: "\e903";
   }
