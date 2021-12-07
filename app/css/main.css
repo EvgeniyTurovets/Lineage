@@ -3346,7 +3346,8 @@ input[type="number"]:focus {
   font-size: 12px; }
 
 .chat__top__right {
-  padding-top: 10px; }
+  padding-top: 10px;
+  display: flex; }
 
 .chat__top__right button {
   border-radius: 5px;
@@ -3357,7 +3358,10 @@ input[type="number"]:focus {
   color: #c7cfd4;
   font-size: 23px;
   margin-left: 10px;
-  transition: 0.3s all; }
+  transition: 0.3s all;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .chat__top__right button .icon-full-out {
   display: none; }
