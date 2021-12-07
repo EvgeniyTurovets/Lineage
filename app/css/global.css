@@ -17,8 +17,8 @@
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/Icons/icomoon.eot?7wcuqp");
-  src: url("../fonts/Icons/icomoon.eot?7wcuqp#iefix") format("embedded-opentype"), url("../fonts/Icons/icomoon.ttf?7wcuqp") format("truetype"), url("../fonts/Icons/icomoon.woff?7wcuqp") format("woff"), url("../fonts/Icons/icomoon.svg?7wcuqp#icomoon") format("svg");
+  src: url("../fonts/Icons/icomoon.eot");
+  src: url("../fonts/Icons/icomoon.eot") format("embedded-opentype"), url("../fonts/Icons/icomoon.ttf") format("truetype"), url("../fonts/Icons/icomoon.woff") format("woff"), url("../fonts/Icons/icomoon.svg") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block; }
@@ -35,6 +35,24 @@ i {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.icon-full-out:before {
+  content: "\e90e"; }
+
+.icon-star:before {
+  content: "\e90d"; }
+
+.icon-send:before {
+  content: "\e90c"; }
+
+.icon-full:before {
+  content: "\e909"; }
+
+.icon-shield:before {
+  content: "\e90a"; }
+
+.icon-alarm:before {
+  content: "\e90b"; }
 
 .icon-arr-r2:before {
   content: "\e907"; }
@@ -62,6 +80,9 @@ i {
 
 .icon-edit:before {
   content: "\e904"; }
+
+.icon-apple:before {
+  content: "\eabe"; }
 
 @font-face {
   font-family: 'Geometria';

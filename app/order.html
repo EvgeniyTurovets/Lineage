@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Linage</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+<body>
+  <div class="app not-decor" id="app">
+    <header class="header" id="header">
+    <div class="container-xxl">
+        <div class="header__row">
+            <div class="burger__menu" id="burger__menu">
+                <div class="burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="mob-nav">
+                    <ul>
+                        <li>
+                            <a href="">Партнерство</a>
+                        </li>
+                        <li>
+                            <a href="">Помощь</a>
+                        </li>
+                        <li>
+                            <div>Язык
+                                <div class="lang-change">
+                                    <div class="lang-change__active">
+                                        <img src="./img/ru.png" width="20px" height="20px">
+                                        <span class="v"></span>
+                                    </div>
+                                    <div class="lang-change__list">
+                                        <a href="">
+                                            <img src="./img/eng.png" width="20px" height="20px">
+                                           EN
+                                        </a>
+                                        <a href="">
+                                            <img src="./img/ru.png" width="20px" height="20px">
+                                           RU
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="mon-nav__bot">
+                        <div class="change-theme">
+                            <button type="button" class="change-theme__light active" id="enable-light-theme-mob"></button>
+                            <button type="button" class="change-theme__dark" id="eneble-dark-theme-mob"></button>
+                        </div>
+
+                        <div class="header__social">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <i class="icon-vk"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="icon-fb"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="icon-tg"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-auth">
+                            <a href="auth.html" class="btn btn-grey">Вход</a>
+                            <a href="reg.html" class="btn btn-green2">Регистрация</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            
+            <a href="" class="header__logo">
+                <img src="./img/logo.png" class="light">
+                <img src="./img/logo-d.png" class="dark">
+            </a>
+
+            <div class="change-theme">
+                <button type="button" class="change-theme__light active" id="enable-light-theme"></button>
+                <button type="button" class="change-theme__dark" id="eneble-dark-theme"></button>
+            </div>
+            <div class="header__row__right">
+                <div class="header__social">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="icon-vk"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="icon-fb"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="icon-tg"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="header__nav">
+                    <ul>
+                        <li>
+                            <a href="">
+                                Партнерство
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Помощь
+                                <span class="v"></span>
+                            </a>
+                            <ul class="level2">
+                                <li>
+                                    <a href="">Пункт 1</a>
+                                </li>
+                                <li>
+                                    <a href="">Пункт 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-auth">
+                    <a href="auth.html" class="btn btn-grey">Вход</a>
+                    <a href="reg.html" class="btn btn-green2">Регистрация</a>
+                </div>
+                <div class="lang-change">
+                    <div class="lang-change__active">
+                        <img src="./img/ru.png" width="29px" height="29px">
+                        <span class="v"></span>
+                    </div>
+                    <div class="lang-change__list">
+                        <a href="">
+                            <img src="./img/eng.png" width="29px" height="29px">
+                           EN
+                        </a>
+                        <a href="">
+                            <img src="./img/ru.png" width="29px" height="29px">
+                           RU
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <main class="main">
+      <div class="container-xxl">
+        <div class="content-page">
+    <div class="offers__top">
+        <h1>Оформление заказа</h1>
+    </div>
+    <div class="offers__back">
+        <a href="">‹ Главная страница</a>
+    </div>
+
+    <div class="order">
+        <div class="order-col order__main">
+            <div class="order__img">
+                <div class="order__img__left">
+                    <a href="./img/order/1.jpg" data-fslightbox="gallery" class="order__img__big" style="background-image: url('./img/order/1.jpg');"></a>
+                </div>
+                <div class="order__img__right">
+                    <div class="row">
+                        <div class="col-3 col-sm-6">
+                            <a href="./img/order/1.jpg" data-fslightbox="gallery" class="order__img__mini" style="background-image: url('./img/order/1.jpg');"></a>
+                        </div>
+                        <div class="col-3 col-sm-6">
+                            <a href="./img/order/1.jpg" data-fslightbox="gallery" class="order__img__mini" style="background-image: url('./img/order/1.jpg');"></a>
+                        </div>
+                        <div class="col-3 col-sm-6">
+                            <a href="./img/order/1.jpg" data-fslightbox="gallery" class="order__img__mini" style="background-image: url('./img/order/1.jpg');"></a>
+                        </div>
+                        <div class="col-3 col-sm-6">
+                            <a href="./img/order/1.jpg" data-fslightbox="gallery" class="order__img__mini" style="background-image: url('./img/order/1.jpg');"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order__des">
+                <div class="order__des__title">
+                    Описание товара
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap </p>
+            </div>
+            <div class="confirm__list">
+                <div class="confirm__row">
+                    <div class="confirm__row__left">Игра</div>
+                    <div class="confirm__row__right">Linage 2</div>
+                </div>
+                <div class="confirm__row">
+                    <div class="confirm__row__left">Категория</div>
+                    <div class="confirm__row__right">Аккаунты</div>
+                </div>
+                <div class="confirm__row">
+                    <div class="confirm__row__left">Сервер</div>
+                    <div class="confirm__row__right">Elcardia + Esthus</div>
+                </div>
+                <div class="confirm__row">
+                    <div class="confirm__row__left">Уровень</div>
+                    <div class="confirm__row__right">99</div>
+                </div>
+            </div>
+            <div class="order__select">
+              
+                <div class="my-select">
+                    <select id="choices-order-img">
+                        <option>Apple pay</option>
+                        <option>Apple pay 2</option>
+                        <option>Apple pay 3</option>
+                    </select>
+                </div>
+
+                <a href="confirm.html" class="btn btn-g btn-after">Перейти к оплате ›</a>
+            </div>
+        </div>
+        <div class="order-col order__chat">
+            <div class="chat" id="chat">
+                <div class="chat__top">
+                    <div class="chat__top__left">
+                        <div class="chat__img" style="background-image: url('./img/inner/saler.png');"></div>
+                        <div class="chat__prof">
+                            <div class="chat__name">Artemey</div>
+                            <div class="chat__status">В сети</div>
+                        </div>
+                    </div>
+                    <div class="chat__top__right">
+                        <button type="button" id="chat-full">
+                            <i class="icon-full"></i>
+                            <i class="icon-full-out"></i>
+                        </button>
+                        <button type="button">
+                            <i class="icon-alarm"></i>
+                        </button>
+                        <button type="button">
+                            <i class="icon-shield"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="chat__body">
+                    <div class="chat__empty" style="display: none">
+                        Напишите продавцу<br> перед оплатой
+                    </div>
+                    <div class="mess__list">
+                        <div class="mess__list__item">
+                            <div class="mess__list__item__top">
+                                <div class="name">Artemey</div>
+                                <div class="data">5 июля в 18:35</div>
+                            </div>
+                            <div class="mess__list__item__text">
+                                Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без
+                            </div>
+                        </div>
+        
+                        <div class="mess__list__item">
+                            <div class="mess__list__item__top">
+                                <div class="name">Вы</div>
+                                <div class="data">5 июля в 18:35</div>
+                            </div>
+                            <div class="mess__list__item__text">
+                                Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без
+                            </div>
+                        </div>
+                        <div class="mess__list__item">
+                            <div class="mess__list__item__top">
+                                <div class="name">Artemey</div>
+                                <div class="data">5 июля в 18:35</div>
+                            </div>
+                            <div class="mess__list__item__text">
+                                Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без
+                            </div>
+                        </div>
+        
+                        <div class="mess__list__item">
+                            <div class="mess__list__item__top">
+                                <div class="name">Вы</div>
+                                <div class="data">5 июля в 18:35</div>
+                            </div>
+                            <div class="mess__list__item__text">
+                                Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat__bot">
+                    <textarea placeholder="Напишите продавцу"></textarea>
+                    <button type="button" class="btn">
+                        <i class="icon-send"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="order-col order__review">
+            <div class="wallet__t">Отзывы покупателей</div>
+            <div class="review__list">
+                <div class="review__item">
+                    <div class="review__top">
+                        <div class="review__left">
+                            <div class="review__img" style="background-image: url('./img/inner/saler.png');"></div>
+                            <div class="review__name">
+                                Artemey
+                                <span>Aion clasic (US), 400h ₽</span>
+                            </div>
+                        </div>
+                        <div class="review__right">
+                            <i class="icon-star active"></i>
+                            <i class="icon-star active"></i>
+                            <i class="icon-star active"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                        </div>
+                    </div>
+                    <div class="review__bot">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    </div>
+                </div>
+                <div class="review__item">
+                    <div class="review__top">
+                        <div class="review__left">
+                            <div class="review__img" style="background-image: url('./img/inner/saler.png');"></div>
+                            <div class="review__name">
+                                Artemey
+                                <span>Aion clasic (US), 400h ₽</span>
+                            </div>
+                        </div>
+                        <div class="review__right">
+                            <i class="icon-star active"></i>
+                            <i class="icon-star active"></i>
+                            <i class="icon-star active"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                        </div>
+                    </div>
+                    <div class="review__bot">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    </div>
+                </div>
+                <div class="review__item">
+                    <div class="review__top">
+                        <div class="review__left">
+                            <div class="review__img" style="background-image: url('./img/inner/saler.png');"></div>
+                            <div class="review__name">
+                                Artemey
+                                <span>Aion clasic (US), 400h ₽</span>
+                            </div>
+                        </div>
+                        <div class="review__right">
+                            <i class="icon-star active"></i>
+                            <i class="icon-star active"></i>
+                            <i class="icon-star active"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                        </div>
+                    </div>
+                    <div class="review__bot">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+      </div>
+    </main>  
+    <footer class="footer">
+    <div class="container-xxl">
+        <div class="footer__wrap">
+            <div class="footer__copy">
+                <div class="footer__copy__top">
+                    © 2021 Игровые сервисы <span>BUCKS.TRADE</span>
+                </div>
+                <div class="footer__copy__bot">
+                    Микро описание проекта, или еще какой-то текст для копирайтов и подобного
+                </div>
+            </div>
+        
+        
+            <div class="footer-menu">
+                <div class="row">
+                    <div class="footer-menu__first-col col-5 col-sm-12 col-lg-6">
+                        <a href="">Личный кабинет</a>
+                        <a href="">регистрация аккаунта</a>
+                        <a href="">Поддержка</a>
+                    </div>
+                    <div class="col-7 col-sm-12 col-lg-6">
+                        <a href="">Условия использования</a>
+                        <a href="">Пользовательское соглашение</a>
+                        <a href="">Использование куки</a>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div class="footer-partner">
+                <img src="./img/partner.png">
+            </div>
+        </div>
+    </div>
+</footer>   
+  </div>
+
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
